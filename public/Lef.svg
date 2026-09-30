@@ -1,0 +1,8 @@
+<svg width="126" height="35" viewBox="0 0 126 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="-1" x2="22.9823" y2="-1" transform="matrix(-0.696186 -0.717861 0.696186 -0.717861 30 33)" stroke="white" stroke-width="2"/>
+<line y1="-1" x2="22.9823" y2="-1" transform="matrix(-0.696186 0.717861 -0.696186 -0.717861 30 0)" stroke="white" stroke-width="2"/>
+<line y1="-0.5" x2="13.0855" y2="-0.5" transform="matrix(-0.687786 -0.725914 0.687786 -0.725914 10 27)" stroke="white" stroke-opacity="0.8"/>
+<line y1="-0.5" x2="13.0855" y2="-0.5" transform="matrix(-0.687786 0.725914 -0.687786 -0.725914 10 8)" stroke="white" stroke-opacity="0.8"/>
+<path d="M46 18H125.688" stroke="white" stroke-opacity="0.8"/>
+<ellipse cx="1.2071" cy="1.25821" rx="1.2071" ry="1.25821" transform="matrix(-1 0 0 1 34.4142 17)" fill="#D9D9D9"/>
+</svg>

@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+/* @import "./utlities/tailwindeasyclass.js"; */
+body {
+  /* overflow: hidden; */
+  background-color: #eaeaea;
+}
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+  /* --color-primary: #691a98;
+  --color-secondary: #f59e0b; */
+}
+
+@theme inline {
+  --color-primary: #1e40af;
+  --color-secondary: #f59e0b;
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@font-face {
+  font-family: "proxima";
+  src: url("/font/boldproximanova.otf") format("truetype");
+}
+.font-proxima {
+  font-family: "proxima", "sans-serif";
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/font/BebasNeue.otf") format("truetype");
+}
+.font-proxima {
+  font-family: "proxima", "sans-serif";
+}
+.font-bebasNeue {
+  font-family: "BebasNeue", "sans-serif";
+}
+
+@layer components {
+  .custom-container {
+    @apply mx-auto w-full max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-16;
+  }
+
+  .button {
+    @apply inline-block px-4 py-2 rounded-md text-white bg-blue-600 hover:bg-blue-700;
+  }
+
+  /* Add your custom styles */
+}
+
+.animate-showContent {
+  animation: showContent 1s ease-in-out forwards;
+}
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+:root {
+  --color-primary: #1e40af;
+  --color-secondary: #f59e0b;
+}
+
+@layer base {
+  .red-text {
+    @apply text-red-500;
+  }
+  .blue-text {
+    @apply text-blue-500;
+  }
+}
+
+@utility text-h1 {
+  @apply text-red-500 leading-[1.5] font-semibold text-2xl md:text-4xl lg:text-5xl;
+}
+
+@utility text-h2 {
+  @apply text-blue-500 leading-[2] font-bold text-2xl md:text-4xl lg:text-5xl;
+}
