@@ -11,6 +11,10 @@ import SliderAnimated from "./components/SliderAnimated";
 import TechTeamShowcase2 from "./components/Tech";
 import TechThatPowers from "./components/TechthatPowersUs";
 import ToogleDark from "./components/ToogleDark";
+
+import { ShootingStars } from "./components/ShootingStars";
+import { StarsBackground } from "./components/StarsBackground";
+
 function App() {
   const bars = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
@@ -35,6 +39,20 @@ function App() {
       <LandingPage3 />
       <LandingPage4 />
       <ToogleDark />
+
+      <div className="relative min-h-screen w-full bg-neutral-950 text-white flex items-center justify-center overflow-hidden">
+        {/* Background Star Layers */}
+        <StarsBackground starCount={120} />
+        <ShootingStars starColor="#ffaa00" trailColor="#ff5500" />
+        <div className="relative z-10 text-center">
+          <h1 className="text-5xl font-bold tracking-tight">
+            Space UI Background
+          </h1>
+          <p className="mt-4 text-neutral-400">
+            Custom shooting star animation effect
+          </p>
+        </div>
+      </div>
     </>
   );
 }
